@@ -1,0 +1,35 @@
+目录说明：
+	Job_spider  //抓取数据以及数据库操作文件夹
+		information.py              //数据库服务器设置信息
+		create_job_tables.py      //数据结构表
+		handle_insert_data.py   //数据插入及查找
+		handle_crawl_lagou.py  //数据抓取表
+	lagou_data_analysis	//网页及运行文件
+		run.py	//服务端运行
+
+环境要求：
+	* Python 3.7
+	* MySQL 8.0
+	* 包含requests,multiprocessing,sqlalchemy，pymysql 包
+	* 原开发IDE:Pycharm
+	  使用阿布云代理，可修改其他代理
+
+配置数据库
+	数据库服务器信息在information.py   __init__ 函数中设置
+
+说明：
+	提供原本的数据库，需自行上传到数据库
+
+自行创建数据库：
+	1、创建数据库
+	2、执行create_job_tables.py，创建数据表
+	3、执行handle_crawl_lagou.py 抓取数据
+
+抓取数据说明：
+	1、本程序抓取的是拉勾网的数据
+	2、使用需要自行购买阿布云的数据，可以按时购买
+
+服务器端说明：
+	1、数据库确保运行
+	2、执行run.py
+

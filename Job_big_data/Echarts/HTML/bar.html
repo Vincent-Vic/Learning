@@ -1,0 +1,328 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Echarts</title>
+    <script src="../js/echarts.js"></script>
+
+    //中国地图文件
+    <script src="../js/china.js"></script>
+
+</head>
+
+<body>
+    <div id="main" style="height:400px;width:600px"></div>
+    <hr>
+    <div id="main2" style="height:400px;width:600px"></div>
+    <hr>
+    <div id="main3" style="height:400px;width:600px"></div>
+    <hr>
+    <div id="main4" style="height:400px;width:600px"></div>
+    <hr>
+    <div id="main5" style="height:400px;width:600px"></div>
+    <hr>
+    <div id="main6" style="height:400px;width:600px"></div>
+    <hr>
+    <div id="main7" style="height:400px;width:600px"></div>
+    <hr>
+    <div id="main8" style="height:400px;width:600px"></div>
+    <hr>
+    <div id="main9" style="height:400px;width:600px"></div>
+    <hr>
+    <div id="main10" style="height:400px;width:600px"></div>
+    <hr>
+    <div id="main11" style="height:400px;width:600px"></div>
+    <hr>
+    <script type="text/javascript">
+        //进行Echarts的初始化，以及定位到画布
+       var mychart =echarts.init(document.getElementById("main"))
+        var option = {
+            title:{
+                text:'echarts 入门'
+            },
+            legend:{
+                data:['销量1','销量2','销量3']
+            },
+            xAxis:{
+                data:['衬衫','羊毛衫','雪纺衫','T恤','裤子','运动鞋','休闲鞋']
+            },
+            yAxis:{},
+
+            //data
+            series:[
+                {
+                    name:'销量1',
+                    type:'bar',
+                    data:[7,14,18,7,24,9,11]
+                },
+                {
+                    name:'销量2',
+                    type:'bar',
+                    data:[15,11,25,12,17,17,23]
+                },
+                {
+                    name:'销量3',
+                    type:'bar',
+                    data:[8,17,14,11,16,24,19]
+                }
+            ]
+        };
+        mychart.setOption(option)
+
+
+         var mychart1 =echarts.init(document.getElementById("main2"))
+        var option1 = {
+            title:{
+                text:'echarts 入门',
+                subtext: '副标题'
+            },
+            legend:{
+                data:['销量1','销量2','销量3']
+            },
+            xAxis:{
+                data:['星期一','星期二','星期三','星期四','星期五','星期六','星期日']
+            },
+            yAxis:{},
+
+            //data
+            series:[
+                {
+                    name:'销量1',
+                    type:'line',
+                    data:[7,14,18,7,24,9,11]
+                },
+                {
+                    name:'销量2',
+                    type:'line',
+                    data:[15,11,25,12,17,17,23],
+                },
+                {
+                    name:'销量3',
+                    type:'line',
+                    data:[8,17,14,11,16,24,19]
+                }
+            ]
+        };
+        mychart1.setOption(option1)
+        var mychart2 =echarts.init(document.getElementById("main3"))
+        var option2 = {
+            title:{
+                text:'echarts 入门',
+                subtext: '副标题'
+            },
+            legend:{
+                data:['销量1','销量2','销量3']
+            },
+            xAxis:{
+                data:['星期一','星期二','星期三','星期四','星期五','星期六','星期日']
+            },
+            yAxis:{},
+
+            //data
+            series:[
+                {
+                    name:'销量1',
+                    type:'line',
+                    data:[7,14,18,7,24,9,11],
+                    areaStyle: {}
+                },
+                {
+                    name:'销量2',
+                    type:'line',
+                    data:[15,11,25,12,17,17,23],
+                    areaStyle: {}
+                },
+                {
+                    name:'销量3',
+                    type:'line',
+                    data:[8,17,14,11,16,24,19],
+                    areaStyle: {}
+                }
+            ]
+        };
+        mychart2.setOption(option2)
+        var mychart3 =echarts.init(document.getElementById("main4"))
+        var option3 = {
+            title:{
+                text:'echarts 入门'
+            },
+            legend:{
+                data:['销量1','销量2','销量3','销量4','销量5']
+            },
+
+            //data
+            series:[
+                {
+                    type:'pie',
+                    radius:'55%',
+                    center:['50%','50%'],
+                    data:[
+                        {name:'销量1',value:332},
+                        {name:'销量2',value:221},
+                        {name:'销量3',value:247},
+                        {name:'销量4',value:124},
+                        {name:'销量5',value:164}
+                    ]
+                }
+            ]
+        };
+        mychart3.setOption(option3)
+         var mychart4=echarts.init(document.getElementById("main5"))
+        var option4 = {
+            title:{
+                text:'echarts 入门'
+            },
+            //数据显示
+            tooltip:{},
+            legend:{
+                data:['销量1','销量2','销量3','销量4','销量5']
+            },
+
+            //data
+            series:[
+                {
+                    type:'pie',
+                    radius:'55%',
+                    //圆心
+                    center:['50%','50%'],
+                    data:[
+                        {name:'销量1',value:332},
+                        {name:'销量2',value:221},
+                        {name:'销量3',value:247},
+                        {name:'销量4',value:124},
+                        {name:'销量5',value:164}
+                    ],
+                    roseType:'radius'
+                }
+            ]
+        };
+        mychart4.setOption(option4)
+        var mychart5=echarts.init(document.getElementById("main6"))
+        var option5 = {
+            title:{
+                text:'echarts 入门'
+            },
+            //数据显示
+            tooltip:{},
+            legend:{
+                data:['销量1','销量2','销量3','销量4','销量5']
+            },
+
+            //data
+            series:[
+                {
+                    type:'pie',
+                   radius:['50%','70%'],
+                    //center:['50%','50%'],
+                    data:[
+                        {name:'销量1',value:332},
+                        {name:'销量2',value:221},
+                        {name:'销量3',value:247},
+                        {name:'销量4',value:124},
+                        {name:'销量5',value:164}
+                    ],
+                    //南丁格尔
+                   // roseType:'radius'
+                }
+            ]
+        };
+        mychart5.setOption(option5)
+
+        var mychart6=echarts.init(document.getElementById("main7"))
+        var option6 = {
+            title:{
+                text:'echarts 入门'
+            },
+            //数据显示
+            tooltip:{},
+            legend:{
+                data:['销量1','销量2','销量3','销量4','销量5']
+            },
+
+            //data
+            series:[
+                {
+                    type:'pie',
+                   radius:['50%','70%'],
+                    //center:['50%','50%'],
+                    label:{
+                      normal:{
+                          //取消原先显示
+                          show:false,
+                          //在中间显示
+                          position:'center'
+                      },
+                        //高亮扇区
+                        emphasis:{
+                          show: true,
+                            textStyle:{
+                                fontSize:'30',
+                                fontWeight:'bold'
+                            }
+                        }
+
+                    },
+                    data:[
+                        {name:'销量1',value:332},
+                        {name:'销量2',value:221},
+                        {name:'销量3',value:247},
+                        {name:'销量4',value:124},
+                        {name:'销量5',value:164}
+                    ],
+                    //南丁格尔
+                   // roseType:'radius'
+                }
+            ]
+        };
+        mychart6.setOption(option6)
+
+        //*******************************************************************************************
+        var mychart7=echarts.init(document.getElementById("main8"))
+        var option7 = {
+            title:{
+                text:'echarts 入门'
+            },
+            //数据显示
+            tooltip:{},
+            legend:{
+                data:['销量1','销量2','销量3','销量4','销量5']
+            },
+
+            //data
+            series:[
+                {
+                    type:'pie',
+                   radius:['50%','70%'],
+                    //center:['50%','50%'],
+                    label:{
+                      normal:{
+                          //取消原先显示
+                          show:false,
+                          //在中间显示
+                          position:'center'
+                      },
+                        //高亮扇区
+                        emphasis:{
+                          show: true,
+                            textStyle:{
+                                fontSize:'30',
+                                fontWeight:'bold'
+                            }
+                        }
+
+                    },
+                    data:[
+                        {name:'销量1',value:332},
+                        {name:'销量2',value:221},
+                        {name:'销量3',value:247},
+                        {name:'销量4',value:124},
+                        {name:'销量5',value:164}
+                    ],
+                    //南丁格尔
+                   // roseType:'radius'
+                }
+            ]
+        };
+        mychart7.setOption(option7)
+    </script>
+</body>
+</html>
