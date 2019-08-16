@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/Logo">
+        <file>logo.png</file>
+        <file alias="V">V.ico</file>
+        <file alias="Public">BackGrounds_Pubilc.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,27 @@
+<RCC>
+    <qresource prefix="/BackGround">
+        <file alias="BackGround_Login">BackGrounds_Login.jpg</file>
+        <file alias="BackGround_Public">BackGrounds_Pubilc.png</file>
+        <file alias="Small">Small_Back.png</file>
+        <file alias="BackGroundHelp">Small_Help.png</file>
+    </qresource>
+    <qresource prefix="/Logo">
+        <file alias="Help">help.png</file>
+        <file alias="Logo">logo.png</file>
+        <file alias="V">V.ico</file>
+    </qresource>
+    <qresource prefix="/QR_Code">
+        <file alias="QR_QQ">QR_QQ.png</file>
+        <file alias="QR_Public">QR_Public.png</file>
+        <file alias="QR_offical">QR_offical.png</file>
+        <file alias="QR_QQPublic">QR_QQPublic.png</file>
+    </qresource>
+    <qresource prefix="/Questions">
+        <file alias="Judgment">JDKx00T.dll</file>
+        <file alias="Completion">KCx00d.dll</file>
+        <file alias="Choice">VCxxc11.dll</file>
+    </qresource>
+    <qresource prefix="/Help">
+        <file>help.txt</file>
+    </qresource>
+</RCC>
